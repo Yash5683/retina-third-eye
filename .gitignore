@@ -1,20 +1,52 @@
-.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables — NEVER commit secrets
 .env
 .env.*
 !.env.example
+backend/.env
+retina-memory/**/.env
+retina-memory/**/.env.*
 
-node_modules/
-.venv/
-venv/
-__pycache__/
-*.pyc
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
 
-dist/
-build/
-.next/
-.vite/
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+retina-memory/**/node_modules/
+retina-memory/**/dist/
+retina-memory/**/.vite/
 
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
 .idea/
-.vscode/
 
+# Memory data (runtime, not source)
+backend/memory.json
+
+# Logs
 *.log
