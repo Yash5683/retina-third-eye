@@ -17,7 +17,12 @@ env/
 ENV/
 
 # Environment variables — NEVER commit secrets
+.env
+.env.*
+!.env.example
 backend/.env
+retina-memory/**/.env
+retina-memory/**/.env.*
 
 # pytest
 .pytest_cache/
@@ -28,6 +33,9 @@ htmlcov/
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
+retina-memory/**/node_modules/
+retina-memory/**/dist/
+retina-memory/**/.vite/
 
 # OS
 .DS_Store
